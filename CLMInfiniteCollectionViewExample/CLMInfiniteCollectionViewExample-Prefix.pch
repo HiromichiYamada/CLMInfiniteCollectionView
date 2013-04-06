@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'UICollectionViewTest' target in the 'UICollectionViewTest' project
+// Prefix header for all source files of the 'CLMInfiniteCollectionViewExample' target in the 'CLMInfiniteCollectionViewExample' project
 //
 
 #import <Availability.h>
