@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259DC79518C98B2800EEB9AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259DC79418C98B2800EEB9AE /* Main.storyboard */; };
 		52DFF2901710EB13001EC5CA /* CLMInfiniteCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFF2841710EB13001EC5CA /* CLMInfiniteCollectionView.m */; };
 		52DFF2911710EB13001EC5CA /* CLMInfinteGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFF2871710EB13001EC5CA /* CLMInfinteGridLayout.m */; };
 		52DFF2931710EB13001EC5CA /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DFF28B1710EB13001EC5CA /* CMAppDelegate.m */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		259DC79418C98B2800EEB9AE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		52DFF2831710EB13001EC5CA /* CLMInfiniteCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMInfiniteCollectionView.h; sourceTree = "<group>"; };
 		52DFF2841710EB13001EC5CA /* CLMInfiniteCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMInfiniteCollectionView.m; sourceTree = "<group>"; };
 		52DFF2861710EB13001EC5CA /* CLMInfinteGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMInfinteGridLayout.h; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				52DFF28D1710EB13001EC5CA /* CMCollectionViewCell.m */,
 				52DFF28E1710EB13001EC5CA /* CMViewController.h */,
 				52DFF28F1710EB13001EC5CA /* CMViewController.m */,
+				259DC79418C98B2800EEB9AE /* Main.storyboard */,
 				AFE0064816D5A1EA0057B6A3 /* Supporting Files */,
 			);
 			path = CLMInfiniteCollectionViewExample;
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52DFF2A31710ECA5001EC5CA /* CLMInfiniteCollectionViewExample-Info.plist in Resources */,
+				259DC79518C98B2800EEB9AE /* Main.storyboard in Resources */,
 				52DFF2A41710ECA5001EC5CA /* Default-568h@2x.png in Resources */,
 				52DFF2A51710ECA5001EC5CA /* Default.png in Resources */,
 				52DFF2A61710ECA5001EC5CA /* Default@2x.png in Resources */,

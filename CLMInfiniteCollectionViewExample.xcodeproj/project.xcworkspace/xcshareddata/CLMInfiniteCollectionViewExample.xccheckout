@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FB933EF8-DEB6-4A84-AAE3-66A1BAD215F6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CLMInfiniteCollectionViewExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D0C32DD6-49BB-45A7-B56E-B4FBA3D0EE3A</key>
+		<string>https://github.com/android1989/CLMInfiniteCollectionView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CLMInfiniteCollectionViewExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D0C32DD6-49BB-45A7-B56E-B4FBA3D0EE3A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/android1989/CLMInfiniteCollectionView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D0C32DD6-49BB-45A7-B56E-B4FBA3D0EE3A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D0C32DD6-49BB-45A7-B56E-B4FBA3D0EE3A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CLMInfiniteCollectionView</string>
+		</dict>
+	</array>
+</dict>
+</plist>

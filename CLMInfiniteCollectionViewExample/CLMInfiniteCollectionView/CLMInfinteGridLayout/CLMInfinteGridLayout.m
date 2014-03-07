@@ -29,7 +29,7 @@
 @interface CLMInfinteGridLayout ()
 
 @property (nonatomic, strong) NSDictionary *layoutInfo;
-@property (nonatomic, assign) CGSize halfItemSize;
+//@property (nonatomic, assign) CGSize halfItemSize;
 @end
 
 @implementation CLMInfinteGridLayout
@@ -56,7 +56,7 @@
 {
     self.edgeInsets = UIEdgeInsetsZero;
     self.itemSize = CGSizeMake(50.0f, 50.0f);
-	self.halfItemSize = CGSizeMake(self.itemSize.width/2, self.itemSize.height/2);
+//	self.halfItemSize = CGSizeMake(self.itemSize.width/2, self.itemSize.height/2);
     self.padding = CGSizeZero;
     self.numberOfColumns = 0;
     self.numberOfRows = 0;
@@ -64,7 +64,14 @@
 
 - (CGPoint)currentOffset
 {
-	return CGPointMake(self.collectionView.contentOffset.x+(self.collectionView.bounds.size.width/2.0)+self.contentShift.x,self.collectionView.contentOffset.y+self.contentShift.y+(self.collectionView.bounds.size.height/2.0)) ;
+    /* test.
+    return CGPointMake(self.collectionView.contentOffset.x+self.contentShift.x,
+                       self.collectionView.contentOffset.y+self.contentShift.y) ;
+
+     // original layout.
+     */
+	return CGPointMake(self.collectionView.contentOffset.x+(self.collectionView.bounds.size.width/2.0)+self.contentShift.x,
+                       self.collectionView.contentOffset.y+self.contentShift.y+(self.collectionView.bounds.size.height/2.0)) ;
 }
 
 - (CGPoint)getOffsetIndex

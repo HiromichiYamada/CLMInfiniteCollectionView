@@ -13,12 +13,13 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface CMViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
-@property (nonatomic, strong) CLMInfiniteCollectionView *collectionView;
+
 @property (nonatomic, strong) CLMInfinteGridLayout *layout;
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, assign) CGFloat check;
 
 @property (nonatomic, strong) NSMutableArray *colors;
+
 @end
 
 //Random Color Generator
@@ -35,11 +36,9 @@ float randomColor(float percent)
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-	
 	[self setupLayout];
 	[self setupCollectionView];
 	[self setupColorDictionary];
-
 }
 
 - (void)setupLayout
@@ -55,7 +54,7 @@ float randomColor(float percent)
 - (void)setupCollectionView
 {
 	//Setup Collection View
-    self.collectionView = [[CLMInfiniteCollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:self.layout];
+    self.collectionView.collectionViewLayout    = self.layout;
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
 	[self.collectionView setShowsHorizontalScrollIndicator:NO];
@@ -100,6 +99,7 @@ float randomColor(float percent)
 {
     CMCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ID" forIndexPath:indexPath];
 	cell.backgroundColor = [self.colors objectAtIndex:indexPath.item];
+    cell.label.text = [NSString stringWithFormat:@"%d:%d", indexPath.section, indexPath.row];
     return cell;
 }
 
@@ -107,4 +107,19 @@ float randomColor(float percent)
 {
     [self.collectionView.collectionViewLayout invalidateLayout];
 }
+
+- (IBAction)segRowsChanged:(id)sender
+{
+    NSString*   labelSelected   = [self.segRows titleForSegmentAtIndex:self.segRows.selectedSegmentIndex];
+    NSLog(@"check row[%@]", labelSelected);
+	self.layout.numberOfRows = [labelSelected intValue];
+}
+
+- (IBAction)segColsChanged:(id)sender
+{
+    NSString*   labelSelected   = [self.segCols titleForSegmentAtIndex:self.segCols.selectedSegmentIndex];
+    NSLog(@"check col[%@]", labelSelected);
+	self.layout.numberOfColumns = [labelSelected intValue];
+}
+
 @end

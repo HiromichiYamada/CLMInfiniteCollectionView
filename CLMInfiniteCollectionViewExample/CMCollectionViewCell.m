@@ -17,7 +17,11 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        
+        CGRect  frameLabel  = CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame));
+        _label  = [[UILabel alloc] initWithFrame:frameLabel];
+        _label.textAlignment    = NSTextAlignmentCenter;
+        _label.text = @"default";
+        [self addSubview:_label];
     }
     return self;
 }

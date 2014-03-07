@@ -10,4 +10,6 @@
 
 @interface CMCollectionViewCell : UICollectionViewCell
 
+@property   UILabel*    label;
+
 @end

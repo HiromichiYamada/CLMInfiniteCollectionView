@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CLMInfiniteCollectionView.h"
 
 @interface CMViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet CLMInfiniteCollectionView *collectionView;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segRows;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segCols;
+
+- (IBAction)segRowsChanged:(id)sender;
+- (IBAction)segColsChanged:(id)sender;
 
 @end
